@@ -18,11 +18,16 @@ vim.api.nvim_create_autocmd({ "WinEnter" }, {
 })
 
 vim.api.nvim_create_autocmd({ "WinEnter" }, {
-  group = augroup("init"),
+  group = augroup("init-2"),
   command = "hi NeoTreeFloatNormal guifg=white guibg=none",
 })
 
 vim.api.nvim_create_autocmd({ "WinEnter" }, {
-  group = augroup("init"),
+  group = augroup("init-3"),
   command = "hi WhichKeyFloat guifg=cyan guibg=none",
+})
+
+vim.api.nvim_create_autocmd({ "WinEnter" }, {
+  group = augroup("init-4"),
+  command = "hi WhichKeyBorder guifg=cyan guibg=none",
 })
