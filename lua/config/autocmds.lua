@@ -11,3 +11,18 @@ vim.api.nvim_create_autocmd({ "TermOpen" }, {
   group = augroup("floatTerm"),
   command = "hi FloatermBorder guibg=none guifg=cyan",
 })
+
+vim.api.nvim_create_autocmd({ "WinEnter" }, {
+  group = augroup("init-1"),
+  command = "hi NeoTreeTitleBar guifg=#DCD7BA guibg=#2D4F67",
+})
+
+vim.api.nvim_create_autocmd({ "WinEnter" }, {
+  group = augroup("init"),
+  command = "hi NeoTreeFloatNormal guifg=white guibg=none",
+})
+
+vim.api.nvim_create_autocmd({ "WinEnter" }, {
+  group = augroup("init"),
+  command = "hi WhichKeyFloat guifg=cyan guibg=none",
+})

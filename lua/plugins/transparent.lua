@@ -3,6 +3,7 @@ return {
   opts = function()
     return {
       groups = {
+        "LazyNormal",
         "FloatBorder",
         "TelescopeBorder",
         "Normal",
