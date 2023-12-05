@@ -10,8 +10,8 @@ return {
         repl_definition = {
           python = {
             -- Can be a table or a function that
-            -- returns a table (see below)
-            command = { "python" },
+            -- returns a table (see below) for MAC set command=python
+            command = { "python3" },
           },
         },
         -- How the repl window will be displayed
