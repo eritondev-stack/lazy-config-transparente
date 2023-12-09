@@ -25,3 +25,6 @@ map("t", "<F12>", "<cmd>FloatermToggle<cr>", { desc = "Float Term" })
 map("t", "<F1>", "<cmd>FloatermKill<cr>", { desc = "Float Term" })
 map("t", "<F8>", "<cmd>FloatermPrev<cr>", { desc = "Float Term" })
 map("t", "<F9>", "<cmd>FloatermNext<cr>", { desc = "Float Term" })
+
+map("n", "<leader>rl", "<cmd>MoltenEvaluateLine<cr>", { desc = "Float Term" })
+map("v", "<leader>rk", "<cmd>MoltenEvaluateOperator<cr>", { desc = "Float Term" })

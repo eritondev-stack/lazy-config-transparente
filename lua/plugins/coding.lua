@@ -49,6 +49,7 @@ return {
           { name = "nvim_lsp" },
           { name = "luasnip" },
           { name = "path" },
+          { name = "jupyter" },
         }, {
           { name = "buffer" },
         }),
@@ -76,6 +77,14 @@ return {
       end
 
       require("cmp").setup(opts)
+    end,
+  },
+  {
+    "rafamadriz/friendly-snippets",
+    config = function()
+      require("luasnip.loaders.from_vscode").lazy_load({
+        exclude = { "python" },
+      })
     end,
   },
 }
